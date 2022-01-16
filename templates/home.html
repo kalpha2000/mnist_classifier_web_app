@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    <h1>Digit Classifier</h1>
+    <form action='/' method='POST' enctype='multipart/form-data'>
+        <input name='digit' type='file' accept="image/*">
+        <input id='submit' type='submit'>
+    </form>   
+    {% if prediction %}
+        <h2>The digit is: {{ prediction }}</h2>
+    {% endif %}
+</body>
+</html>
